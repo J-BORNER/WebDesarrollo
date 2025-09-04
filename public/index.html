@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Web Service 🔥</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        
+        p {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        
+        .endpoints {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        
+        .endpoint {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .method {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #667eea;
+            color: white;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .url {
+            color: #495057;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+        
+        .btn:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            background: #28a745;
+            color: white;
+            border-radius: 4px;
+            font-size: 0.8em;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Mi Web Service</h1>
+        <p>¡Qué onda mi crack! Tu API está funcionando correctamente. Aquí tienes los endpoints disponibles:</p>
+        
+        <div class="endpoints">
+            <div class="endpoint">
+                <span class="method">GET</span>
+                <span class="url">/api/saludo</span>
+                <span class="badge">Funcional</span>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method">GET</span>
+                <span class="url">/api/usuarios</span>
+                <span class="badge">Base de datos</span>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method">POST</span>
+                <span class="url">/api/usuarios</span>
+                <span class="badge">Crear usuario</span>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method">GET</span>
+                <span class="url">/api/usuarios/:id</span>
+                <span class="badge">Buscar usuario</span>
+            </div>
+        </div>
+
+        <a href="/api/saludo" class="btn">Probar API</a>
+        <a href="/api/usuarios" class="btn">Ver Usuarios</a>
+        
+        <p style="margin-top: 30px; font-size: 0.9em; color: #888;">
+            📧 ¿Necesitas ayuda? ¡Tu API está ready para producción!
+        </p>
+    </div>
+</body>
+</html>
